@@ -1,4 +1,4 @@
-# Run this app with `python app_main.py` and
+#This script puts the other scripts together into one
 # visit http://127.0.0.1:8050/ in your web browser.
 
 import dash
