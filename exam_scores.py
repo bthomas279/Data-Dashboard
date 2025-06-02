@@ -16,6 +16,7 @@ def exam_scores():
     fig = px.histogram(df, x = "exam_score", title = "Exam Score Distribution")
 
     v1_layout = html.Div([
+        #Subtitle
         html.H2("Exam Score Distribution"),
         dcc.Graph(figure = fig)
     ])

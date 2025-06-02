@@ -15,8 +15,8 @@ Data Dashboard
 │
 ├── app_main.py         ← Main Dash app
 ├── exam_scores.py      ← Exam score visualization
-├── media_vs_sleep.py   ← social media vs sleep visualization
-├──            ← Another one...
+├── media_vs_sleep.py   ← Social media hours vs sleep hours visualization
+├── study_vs_media.py   ← Study hours vs social media hours visualization
 ├──
 ├──           ← Another one...
 ├──
@@ -33,16 +33,11 @@ Data Dashboard
 
 ---
 ## 🚀 How to Use
-Simpily run the visualization scripts and then run app_main. This allows the application with the visualizations to activate. Edits and additions can be made to the the visualization scripts. The edits will appear once both they and app_main have been run.
-
----
-
-## 🔄 To Use Your Own Database
-
+Simpily run the visualization scripts first and then run app_main to activate the app. Use this link (http://127.0.0.1:8050/) to view the app. Edits and additions can be made to the the visualization scripts. Simpily making these changes in the chosen visualization script(s) will update the app as long as the app_main is running. 
 
 ---
 ## 🔮 Future Plans
-I do not have any future plans for this project at the moment.
+I do not have any future plans for this project at the moment. However, this was a very engaging and interesting project to complete, and I will use the skills and modules I learned here for potential future projects.
 
 ---
 ## 👨‍💻 Creator Information
