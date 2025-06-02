@@ -43,6 +43,9 @@ def media_vs_sleep():
     #Creates the the visualization's own layout in the app
     v2_layout = html.Div([
         html.H2("Social Media Hours VS Sleep Hours"),
+        html.P("""This Boxplot shows that there is a small difference between the mean
+        sleep hours and the social media hours ranges. However this does not apply to the social media 
+        hour range of 8-10, who has a much lower average sleep amount."""),
         dcc.Graph(figure = fig)
     ])
 
