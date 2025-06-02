@@ -33,7 +33,7 @@ Data Dashboard
 
 ---
 ## 🚀 How to Use
-Simpily run the visualization scripts first and then run app_main to activate the app. Use this link (http://127.0.0.1:8050/) to view the app. Edits and additions can be made to the the visualization scripts. Simpily making these changes in the chosen visualization script(s) will update the app as long as the app_main is running. 
+Simpily run the visualization scripts first and then run app_main to activate the app. Use this link (http://127.0.0.1:8050/) to view the app. Edits and additions can be made to the the visualization scripts. Simpily making these changes in the chosen visualization script(s) and run them. This will update the app as long as the app_main is running. 
 
 ---
 ## 🔮 Future Plans
