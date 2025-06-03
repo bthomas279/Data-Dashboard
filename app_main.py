@@ -8,6 +8,7 @@ from media_vs_sleep import media_vs_sleep
 from study_vs_media import gender_work_social
 from mental_vs_exam import mental_vs_exam
 from sleep_vs_mental import sleep_vs_mental
+from diet_vs_mental import mental_diet_violin
 
 app = dash.Dash(__name__)
 
@@ -23,7 +24,9 @@ app.layout = html.Div([
     html.Hr(),
     mental_vs_exam(),
     html.Hr(),
-    sleep_vs_mental()
+    sleep_vs_mental(),
+    html.Hr(),
+    mental_diet_violin()
 ])
 
 if __name__ == "__main__":

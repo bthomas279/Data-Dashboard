@@ -24,7 +24,7 @@ def sleep_vs_mental():
         color = "part_time_job",
         title = "Sleep Hours vs. Mental Health Rating",
         labels = {
-            "mental_health_rating": "Mental Halth Rating",
+            "mental_health_rating": "Mental Health Rating",
             "sleep_hours": "Hours of Sleep",
             "part_time_job": "Part Time Job"},
         trendline = "ols"
