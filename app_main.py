@@ -7,6 +7,8 @@ from exam_scores import exam_scores
 from media_vs_sleep import media_vs_sleep
 from study_vs_media import gender_work_social
 from mental_vs_exam import mental_vs_exam
+from sleep_vs_mental import sleep_vs_mental
+
 app = dash.Dash(__name__)
 
 #Create the final layout
@@ -19,8 +21,9 @@ app.layout = html.Div([
     html.Hr(),
     gender_work_social(),
     html.Hr(),
-    mental_vs_exam()
-
+    mental_vs_exam(),
+    html.Hr(),
+    sleep_vs_mental()
 ])
 
 if __name__ == "__main__":
