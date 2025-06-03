@@ -1,4 +1,3 @@
-import dash
 from dash import dcc, html
 import plotly.express as px
 import pandas as pd
@@ -16,27 +15,39 @@ def sleep_vs_mental():
         v5_layout: A variable which represents the visualization's layout in 
         the app.
     """
-    #Interactive scatterplot set up
-    fig = px.scatter(
-        df, 
-        x = "sleep_hours", 
-        y = "mental_health_rating", 
-        color = "part_time_job",
-        title = "Sleep Hours vs. Mental Health Rating",
-        labels = {
-            "mental_health_rating": "Mental Health Rating",
-            "sleep_hours": "Hours of Sleep",
-            "part_time_job": "Part Time Job"},
-        trendline = "ols"
+    #Create the sleep hours bin
+    df["sleep_hours_bin"] = pd.cut(
+        df["sleep_hours"],
+        bins = [0, 4, 6, 8, 10],
+        labels = ["0-4", "4-6", "6-8", "8-10"]
     )
+
+    #Group by the sleep hour bins and find the mental health rating mean 
+    average_bin = df.groupby(['sleep_hours_bin', 'part_time_job'])['mental_health_rating'].mean().reset_index()
+
+    #Create the interactive line plot 
+    fig = px.line(
+        average_bin,
+        x = 'sleep_hours_bin',
+        y = 'mental_health_rating',
+        color = 'part_time_job',
+        markers = True,
+        title = "Average Mental Heath Rating vs. Sleep Hours (by Part-Time Job Status)",
+        labels = {'sleep_hours_bin': 'Sleep Hours',
+                  'mental_health_rating': 'Mental Health Rating'}
+    )
+    
+    #Update fig
+    fig.update_traces(line = dict(width = 3))
+    fig.update_layout(yaxis_range = [0,10])
+
 
     #Creates the the visualization's own layout in the app
     v5_layout = html.Div([
-        #Subtitle
-        html.H2("Sleep Hours vs. Mental Health Score"),
-        html.H3("Organized by part time job"),
-        html.P(""""""), 
-        dcc.Graph(figure = fig)
-    ])
+            #Subtitle
+            html.H2("Sleep Hours vs. Mental Health Rating"),
+            dcc.Graph(figure = fig)
+        ])
 
     return v5_layout
+    

@@ -2,6 +2,7 @@
 # visit http://127.0.0.1:8050/ in your web browser.
 
 import dash
+import pandas as pd
 from dash import html
 from exam_scores import exam_scores
 from media_vs_sleep import media_vs_sleep
@@ -11,6 +12,7 @@ from sleep_vs_mental import sleep_vs_mental
 from diet_vs_mental import mental_diet_violin
 
 app = dash.Dash(__name__)
+df = pd.read_csv('database.csv')
 
 #Create the final layout
 app.layout = html.Div([
@@ -28,6 +30,7 @@ app.layout = html.Div([
     html.Hr(),
     mental_diet_violin()
 ])
+
 
 if __name__ == "__main__":
     app.run(debug = True)

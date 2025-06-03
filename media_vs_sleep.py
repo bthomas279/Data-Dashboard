@@ -7,7 +7,7 @@ df = pd.read_csv('database.csv')
 
 def media_vs_sleep():
     """Creates a boxplot for the social media hours vs sleep hours
-    visualization
+    visualization.
     Args:
         None
     Returns:
