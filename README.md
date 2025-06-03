@@ -22,14 +22,15 @@ Data Dashboard
 ├──
 └── database.csv        ← Database used for this project
 
-
-
-## 📄 CSV Format
-
-
 ## 🔧 Core Modules
 
+- **[diet_vs_mental.py](https://github.com/bthomas279/Data-Dashboard/blob/main/diet_vs_mental.py)**  
 
+Violin plot for diet quality and mental health rating.
+
+- **[exam_scores.py](https://github.com/bthomas279/Data-Dashboard/blob/main/exam_scores.py)**
+
+Histogram of exam scores.
 
 ---
 ## 🚀 How to Use
