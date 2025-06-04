@@ -10,6 +10,7 @@ from study_vs_media import gender_work_social
 from mental_vs_exam import mental_vs_exam
 from sleep_vs_mental import sleep_vs_mental
 from diet_vs_mental import mental_diet_violin
+from sleep_vs_exam import sleep_exam_contour
 
 app = dash.Dash(__name__)
 df = pd.read_csv('database.csv')
@@ -28,9 +29,10 @@ app.layout = html.Div([
     html.Hr(),
     sleep_vs_mental(),
     html.Hr(),
-    mental_diet_violin()
+    mental_diet_violin(),
+    html.Hr(),
+    sleep_exam_contour()
 ])
-
 
 if __name__ == "__main__":
     app.run(debug = True)

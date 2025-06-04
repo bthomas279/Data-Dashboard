@@ -46,6 +46,9 @@ def sleep_vs_mental():
     v5_layout = html.Div([
             #Subtitle
             html.H2("Sleep Hours vs. Mental Health Rating"),
+            html.P("""The Line Plot shows that Those with a part time job tend to have a better mental
+                   health rating the more sleep hours they get after the 4 hr mark. The opposite can be said for
+                   students who don't have a part time job."""),
             dcc.Graph(figure = fig)
         ])
 
