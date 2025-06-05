@@ -16,25 +16,46 @@ Data Dashboard
 ├── app_main.py         ← Main Dash app
 ├── exam_scores.py      ← Exam score visualization
 ├── media_vs_sleep.py   ← Social media hours vs sleep hours visualization
-├── study_vs_media.py   ← Study hours vs social media hours visualization
-├──
-├──           ← Another one...
-├──
+├── study_vs_media.py   ← Study hours vs social media hours by gender visualization
+├── diet_vs_mental.py   ← Diet Quality vs mental health rating visualization
+├── sleep_vs_exam.py    ← Sleep hours vs exam score visualization
+├── sleep_vs_mental.py  ← Sleep hours vs mental health rating by part time job visualization
+├── mental_vs_exam.py   ← Mental health rating vs exam score visualization
 └── database.csv        ← Database used for this project
 
 ## 🔧 Core Modules
 
 - **[diet_vs_mental.py](https://github.com/bthomas279/Data-Dashboard/blob/main/diet_vs_mental.py)**  
 
-Violin plot for diet quality and mental health rating.
+Creates violin plot for diet quality and mental health rating.
 
 - **[exam_scores.py](https://github.com/bthomas279/Data-Dashboard/blob/main/exam_scores.py)**
 
-Histogram of exam scores.
+Creates histogram of exam scores.
+
+- **[media_vs_sleep.py](https://github.com/bthomas279/Data-Dashboard/blob/main/media_vs_sleep.py)**
+
+Creates boxplot of social media hours and sleep hours
+
+- **[mental_vs_exam.py](https://github.com/bthomas279/Data-Dashboard/blob/main/mental_vs_exam.py)**
+
+Creates density heatmap of mental health scores and exam scores
+
+- **[sleep_vs_exam.py](https://github.com/bthomas279/Data-Dashboard/blob/main/sleep_vs_exam.py)**
+
+Creates contour Plot of sleep hours and exam scores
+
+- **[sleep_vs_mental.py](https://github.com/bthomas279/Data-Dashboard/blob/main/sleep_vs_mental.py)**
+
+Creates line plot of sleep hours and mental health rating
+
+- **[study_vs_media.py](https://github.com/bthomas279/Data-Dashboard/blob/main/study_vs_media.py)**
+
+Creates grouped Bar chart of study hours and social media hours.
 
 ---
 ## 🚀 How to Use
-Simpily run the visualization scripts first and then run app_main to activate the app. Use this link (http://127.0.0.1:8050/) to view the app. Edits and additions can be made to the the visualization scripts. Simpily making these changes in the chosen visualization script(s) and run them. This will update the app as long as the app_main is running. 
+Simpily run the visualization scripts first and then run app_main to activate the app. Use this link (http://127.0.0.1:8050/) to view the app. Edits and additions can be made to the the visualization scripts. Simpily make these changes in the chosen visualization script(s) and run them. This will update the app as long as the app_main is running. 
 
 ---
 ## 🔮 Future Plans
