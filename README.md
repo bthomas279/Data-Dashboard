@@ -7,6 +7,8 @@ The goal of this project was to create a Dash App that visualizes data from the 
 
 ## ✅ Features
 
+- Extracts various data information from the CSV into the visualizations needed
+- Updates app from any script as long as the app_main is active.
 
 ---
 
