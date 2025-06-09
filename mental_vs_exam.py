@@ -1,4 +1,3 @@
-import dash
 from dash import dcc, html
 import plotly.express as px
 import pandas as pd
@@ -46,7 +45,7 @@ def mental_vs_exam():
         html.H2("Mental Health Rating vs. Exam Scores"),
         html.P("""Based on the heatmap shown, not many students had a mental health rating
                above 10 and the exam score distribution is almost flat. The majority of students with a mental 
-               health rating between 5 and 10 tended to recive an exam score between 60 and 90. Finally,
+               health rating between 5 and 10 tended to recive an exam score between 60 and 100. Finally,
                studnets with a 0-5 mental health rating tended to perfrom worse than those with a rating of
                5-10, with most students only scoring between a 0 and 80."""), 
         dcc.Graph(figure = fig)

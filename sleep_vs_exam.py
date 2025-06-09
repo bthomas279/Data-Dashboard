@@ -6,7 +6,7 @@ import pandas as pd
 df = pd.read_csv('database.csv')
 
 def sleep_exam_contour():
-    """Creates a countour plot visualizing the sleep hours and exam scores to
+    """Creates a contour plot visualizing the sleep hours and exam scores to
     spot data clusters in the space.
     Args:
         None.
@@ -14,7 +14,7 @@ def sleep_exam_contour():
         v7_layout: A variable which represents the visualization's layout in 
         the app.
     """
-    #Create the 
+    #Create the contour plot
     fig = px.density_contour(
         df,
         x = "sleep_hours",
@@ -29,7 +29,7 @@ def sleep_exam_contour():
     )
 
 
-     #Creates the the visualization's own layout in the app
+    #Creates the the visualization's own layout in the app
     v7_layout = html.Div([
             #Subtitle
             html.H2("Sleep Hours vs. Exam Scores"),

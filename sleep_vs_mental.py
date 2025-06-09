@@ -6,7 +6,7 @@ import pandas as pd
 df = pd.read_csv('database.csv')
 
 def sleep_vs_mental():
-    """Creates an interactive scatter plot based of the sleep hours per day
+    """Creates an interactive line plot based of the sleep hours per day
     and the mental health rating split by whether or not the participants have
     a part time job
     Args:
