@@ -36,4 +36,7 @@ app.layout = html.Div([
     sleep_exam_contour()
 ])
 
-application = server
+app = server
+
+def handler(environ, start_response):
+    return server(environ, start_response)
