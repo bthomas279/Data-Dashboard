@@ -24,7 +24,10 @@ Data Dashboard
 ├── sleep_vs_exam.py ← Sleep hours vs exam score visualization
 ├── sleep_vs_mental.py ← Sleep hours vs mental health rating by part time job visualization
 ├── mental_vs_exam.py ← Mental health rating vs exam score visualization
-└── database.csv ← Database used for this project
+├── vercel.json      ← Vercel Connection 
+├── requirements.txt ← Imports for vercel
+└── database.csv      ← Database used for this project
+
 
 api
 └── app_main.py ← Main Dash app
