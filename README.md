@@ -2,7 +2,7 @@
 
 ## 📝 Introduction
 
-The goal of this project was to create a Dash App that visualizes data from the Student Habits vs Acedemic Performance database. Through these dash visualizations, I hope to uncover some trends of the kinds of factors that effect acedemic performance, and then determine the results this database shows.
+The goal of this project was to create a Dash App that visualizes data from the Student Habits vs Academic Performance database. Through these dash visualizations, I hope to uncover some trends of the kinds of factors that effect acedemic performance, and then determine the results this database shows.
 
 ---
 
