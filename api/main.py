@@ -20,6 +20,7 @@ df = pd.read_csv('database.csv')
 #Create the final layout
 app.layout = html.Div([
     html.H1("Dash App Dashboard"),
+    html.H3("Benjamin Thomas"),
     html.Hr(),
     exam_scores(),
     html.Hr(),
