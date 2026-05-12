@@ -2,6 +2,7 @@
 # visit http://127.0.0.1:8050/ in your web browser.
 
 import dash
+import flask
 import pandas as pd
 from dash import html
 from exam_scores import exam_scores
@@ -12,7 +13,8 @@ from sleep_vs_mental import sleep_vs_mental
 from diet_vs_mental import mental_diet_violin
 from sleep_vs_exam import sleep_exam_contour
 
-app = dash.Dash(__name__)
+server = flask.Flask(__name__)
+app = dash.Dash(__name__, server=server)
 df = pd.read_csv('database.csv')
 
 #Create the final layout
@@ -34,5 +36,4 @@ app.layout = html.Div([
     sleep_exam_contour()
 ])
 
-if __name__ == "__main__":
-    app.run(debug = True)
+application = server
